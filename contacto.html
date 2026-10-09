@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fans F1</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+    <!--
+        CABECERA Y NAVEGACIÓN
+    -->
+    <header>
+        <div class="logo-container">
+            <img src="imagenes/logo-f1.png" alt="Logo Oficial de Fórmula 1" class="logo">
+            <h2>GP Mónaco 2026</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="circuito.html">Circuito</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+        CONTENIDO PRINCIPAL - FORMULARIO CON MAILTO:
+        Formulario bien estructurado mediante grupos en CSS, alineado y validado mediante HTML5.
+    -->
+    <main>
+        <section>
+            <h1>Contacto y Suscripción</h1>
+            <p>¿Tienes alguna consulta o quieres recibir las últimas novedades sobre la Fórmula 1? Envíanos tus comentarios usando el siguiente formulario.</p>
+
+            <form action="mailto:carlos.azpeitia@ejemplo.com" method="post" enctype="text/plain">
+                
+                <div class="form-grupo">
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="Nombre" placeholder="Tu nombre y apellidos" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="correo">Correo Electrónico *</label>
+                    <input type="email" id="correo" name="Correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="escuderia">Escudería Favorita</label>
+                    <select id="escuderia" name="Escuderia_Favorita">
+                        <option value="Ferrari">Scuderia Ferrari</option>
+                        <option value="McLaren">McLaren</option>
+                        <option value="RedBull">Red Bull Racing</option>
+                        <option value="Mercedes">Mercedes-AMG</option>
+                        <option value="AstonMartin">Aston Martin</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="mensaje">Mensaje / Comentario *</label>
+                    <textarea id="mensaje" name="Mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar Formulario</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Redes Oficiales</h2>
+            <p>Puedes seguir la cobertura en tiempo real desde la plataforma de comunicación de la F1:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/c/F1" target="_blank" rel="noopener">Canal Oficial de YouTube F1</a></li>
+                <li><a href="https://x.com/F1" target="_blank" rel="noopener">Cuenta Oficial X (Twitter) F1</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!--
+        PIE DE PÁGINA
+    -->
+    <footer>
+        <p>&copy; 2026 Sitio Web sobre Fórmula 1 - Proyecto Académico BirtLH.</p>
+    </footer>
+
+</body>
+</html>
